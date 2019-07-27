@@ -7,12 +7,17 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/745b851de4.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="lib/css/styles.css">
-                 
+    <link rel="stylesheet" href="lib/css/styles.css">            
 
-    <script src="js/lightslider.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+
 
 
 
@@ -61,24 +66,80 @@
 
     <!-- JQUERY SLIDER -->
 
-    <ul id="lightSlider">
-        <li>
-            <h3>First Slide</h3>
-            <p>Lorem ipsum Cupidatat quis pariatur anim.</p>
-        </li>
-        <li>
-            <h3>Second Slide</h3>
-            <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
-        </li>
-        
-      </ul>
-
+    <main>
+      <div>
+        <h2 class="main-info">Model Showcase:</h2>
+      </div>
+      <div class="carousel">
+        <div><img src="https://res.cloudinary.com/connorn/image/upload/v1564194479/Assets%20ECommerce/Orion_closeup_atchf8.jpg" class="slider-img" alt="filler image slide 1" title="random text"></div>
+        <div><img src="https://res.cloudinary.com/connorn/image/upload/v1564195050/Assets%20ECommerce/brass_nautical_sextant_dkesfr.jpg" class="slider-img" alt="filler image slide 2" title="random text"></div>
+        <div><img src="https://res.cloudinary.com/connorn/image/upload/v1564195377/Assets%20ECommerce/Antique_copper_griffith_astro_telescope_wiigd3.jpg" class="slider-img" alt="filler image slide 3" title="random text"></div>
+        <div><img src="https://res.cloudinary.com/connorn/image/upload/v1564195572/Assets%20ECommerce/Orion_27191_StarBlast_rk4gd8.jpg" class="slider-img" alt="filler image slide 4" title="random text"></div>
+        <div><img src="https://res.cloudinary.com/connorn/image/upload/v1564195740/Assets%20ECommerce/Meade-12-Inch-ACF_wrhnhv.jpg" class="slider-img" alt="filler image slide 4" title="random text"></div>
+      </div>
+    </main>
     <!-- END JQUERY SLIDER -->
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-4">
+            <h3>Follow Us!</h3>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-rss fa-2x" aria-hidden="true"></i></a></li>
+              </ul>
+                <div>
+                  <p>Logo made using <a href="https://logomakr.com/" target="_blank" class="logomakr_link">LogoMakr</a></p>
+                  <p>&copy; 2019 Designed by AstroTech</p>
+                </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <h3>Keep in Touch:</h3>
+            <ul class="list-unstyled">
+              <li><p><strong><i class="fa fa-map-marker"></i> Address:</strong> Location, Street, Code</p></li>
+              <li><p><strong><i class="fa fa-envelope" aria-hidden="true"></i> Email:</strong> <a href="#">info@randomemail.com</a></p></li>
+              <li><p><strong><i class="fa fa-phone" aria-hidden="true"></i> Phone:</strong> +01 999 999 9999</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- END FOOTER -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+
+<script>
+
+  $(document).ready(function(){
+    $('.carousel').bxSlider({
+      pager: false,
+      slideMargin: 30,
+      controls: false,
+      speed: 30000,
+      useCSS: false,
+      ticker: true,
+      tickerHover: true,
+      slideWidth: 300,
+      responsive: false,
+      minSlides: 1,
+      maxSlides: 3,
+      captions: false,
+    });
+  });
+    
+  </script>
   </body>
 </html>
