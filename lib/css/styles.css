@@ -1,8 +1,19 @@
 /* This is going to be used for any modified/custom styling */
 
-body, html {
+html,body {
+    width: 100%;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 800px) {
+    .index-header {
+        padding-top: 200px;
+    }
 }
 
 /* NAVBAR */
@@ -11,6 +22,10 @@ body, html {
     background-color: rgba(21, 31, 33, 0.5);
     border-bottom: 1px solid #d21313;
     font-family: 'Alegreya Sans', sans-serif;
+}
+
+.navbar .navbar-toggler {
+    color: #d21313;
 }
 
 .navbar-brand {
@@ -29,6 +44,7 @@ body, html {
 .navbar .navbar-nav .active-link {
     color: #fff;
 }
+
 
 
 /* INDEX HEADER */
@@ -60,6 +76,9 @@ body, html {
     border-radius: 10px;
     border: 1px solid #d21313;
 }
+
+
+
 
 /* INDEX SLIDER */
 
@@ -106,6 +125,8 @@ body, html {
     border-radius: 10px;
 }
 
+
+
 /* PRODUCT HEADER */
 
 .product-header {
@@ -137,16 +158,17 @@ body, html {
     color: #d21313;
 }
 
+
+
 /* PRODUCT */
 
 .product-main {
     background: url(https://res.cloudinary.com/connorn/image/upload/v1564255852/Assets%20ECommerce/test_background_2_f8nktj.jpg) center center no-repeat;
     background-size: cover;
-    height: 100%;
     color: black;
     align-items: center;
     border-bottom: 1px solid #d21313;
-    height: 200vh;
+    height: 220vh;
     width: 100vw;
     padding-top: 30px;
 }
@@ -192,12 +214,14 @@ body, html {
     margin: 0;
 }
 
+
+
 /* PRODUCT FILTER */
 
 input[type="radio"] {
     display:none;
 }
-  label {
+label {
     width:23%;
     float:left;
     text-align:center;
@@ -209,25 +233,72 @@ input[type="radio"] {
     cursor:pointer;
     border: 1px solid #d21313;
     border-radius: 10px
-  }
-  input[type="radio"][id="blue"]:checked + label {
+}
+input[type="radio"][id="blue"]:checked + label {
     background: #d21313;
-  }
-  input[type="radio"][id="blue"]:checked ~ .row .sextants, input[type="radio"][id="blue"]:checked ~ .row .green {
+}
+input[type="radio"][id="blue"]:checked ~ .row .sextants, input[type="radio"][id="blue"]:checked ~ .row .green {
     visibility: hidden;
-  }
-  input[type="radio"][id="red"]:checked + label {
+}
+input[type="radio"][id="red"]:checked + label {
     background: #d21313;
-  }
-  input[type="radio"][id="red"]:checked ~ .row .tel, input[type="radio"][id="red"]:checked ~ .row .green {
+}
+input[type="radio"][id="red"]:checked ~ .row .tel, input[type="radio"][id="red"]:checked ~ .row .green {
     visibility: hidden;
-  }
-  input[type="radio"][id="green"]:checked + label {
+}
+input[type="radio"][id="green"]:checked + label {
     background: #d21313;
-  }
-  input[type="radio"][id="green"]:checked ~ .row .not-cheap {
+}
+input[type="radio"][id="green"]:checked ~ .row .not-cheap {
     visibility: hidden;
-  }
+}
+
+
+
+/* CONTACT */
+
+.contact-header {
+    background: url(https://res.cloudinary.com/connorn/image/upload/v1564335069/Assets%20ECommerce/contact_page_background_ehtap2.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    border-bottom: 1px solid #d21313;
+    padding-top: 30px;
+}
+
+.contact-intro {
+    text-align: center;
+    font-size: 70px;
+    padding-bottom: 30px;
+}
+
+
+
+/* CONTACT FORM */
+
+.form-elements {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #d21313;
+    border-radius: 10px;
+    outline: none;
+    background: rgba(21, 31, 33, 0.5);
+    color: #fff;
+}
+
+.form-elements::placeholder {
+    color: #fff;
+}
+
+.contact-submit:hover{
+    background-color: #d21313;
+}
+
+
 
 /* FOOTER */
 

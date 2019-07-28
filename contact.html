@@ -34,21 +34,29 @@
             <li><a class="nav-link active-link" href="contact.html">CONTACT US</a></li>
           </ul>
         </div>
-      </nav>
+    </nav>
 
     <!-- END NAVBAR-->
 
     <!-- HEADER -->
 
-    <header>
+    <header class="contact-header">
+
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1></h1>
+        <div class="col-md-8 mx-auto">
+          <form>
+            <fieldset class="contact-form">
+              <h1 class="contact-intro">Contact us:</h1>
+                <input type="email" class="form-elements" id="email" placeholder="email...">
+                <input type="text" class="form-elements" id="name" placeholder="name...">
+                <input type="text" class="form-elements" id="subject" placeholder="subject...">       
+                <textarea class="form-elements" id="message" placeholder="message..." rows="3"></textarea>
+                <button type="submit" class="form-elements contact-submit">submit</button>
+              </fieldset>
+            </form>
           </div>
         </div>
-      </div>
-  </header>
+    </header>
 
     <!-- END HEADER -->
 
