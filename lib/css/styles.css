@@ -31,9 +31,9 @@ body, html {
 }
 
 
-/* HEADER */
+/* INDEX HEADER */
 
-header {
+.index-header {
     background: url(https://res.cloudinary.com/connorn/image/upload/v1564068320/Assets%20ECommerce/stars_xvjxgc.jpg) center center no-repeat;
     background-size: cover;
     height: 100%;
@@ -43,19 +43,16 @@ header {
     border-bottom: 1px solid #d21313;
 }
 
-.header-text {
-    text-align: center;
-}
-
 .siteName {
     color: #d21313;
 }
 
-header h1 {
+.index-intro {
     font-size: 70px;
+    text-align: center;
 }
 
-header .header-info {
+.header-info {
     font-size: 32px;
     text-align: center;
     background-color: rgba(21, 31, 33, 0.5);
@@ -64,9 +61,9 @@ header .header-info {
     border: 1px solid #d21313;
 }
 
-/* SLIDER */
+/* INDEX SLIDER */
 
-main {
+.index-main {
     margin: 0;
     padding: 30px;
     background-color: black;
@@ -109,6 +106,129 @@ main {
     border-radius: 10px;
 }
 
+/* PRODUCT HEADER */
+
+.product-header {
+    background: url(https://res.cloudinary.com/connorn/image/upload/v1564250779/Assets%20ECommerce/stars_product_background_gvvp3x.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d21313;
+}
+
+.product-intro {
+    font-size: 70px;
+    text-align: center;
+    padding-bottom: 75px;
+}
+
+.product-info {
+    font-size: 32px;
+    text-align: center;
+    background-color: rgba(21, 31, 33, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #d21313;
+}
+
+.quote-author {
+    color: #d21313;
+}
+
+/* PRODUCT */
+
+.product-main {
+    background: url(https://res.cloudinary.com/connorn/image/upload/v1564255852/Assets%20ECommerce/test_background_2_f8nktj.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    color: black;
+    align-items: center;
+    border-bottom: 1px solid #d21313;
+    height: 200vh;
+    width: 100vw;
+    padding-top: 30px;
+}
+
+.product-content {
+    padding: 50px;
+}
+
+.product-intro {
+    text-align: center;
+    color: white;
+}
+
+.product-img {
+    height: 200px;
+    width: 200px;
+}
+
+.card-img-top {
+    height: 200px;
+    widows: 200px;
+}
+
+.product-divider {
+    border: 1px solid black;
+}
+
+.card {
+    margin: 10px;
+    border: 1px solid #d21313;
+    border-radius: 10px;
+}
+
+.card-text {
+    margin: 0;
+}
+
+.card-description {
+    margin: 0;
+}
+
+.card-price {
+    margin: 0;
+}
+
+/* PRODUCT FILTER */
+
+input[type="radio"] {
+    display:none;
+}
+  label {
+    width:23%;
+    float:left;
+    text-align:center;
+    background: black;
+    color:#fff;
+    padding:0.5%;
+    margin:0.5%;
+    margin-bottom:30px;
+    cursor:pointer;
+    border: 1px solid #d21313;
+    border-radius: 10px
+  }
+  input[type="radio"][id="blue"]:checked + label {
+    background: #d21313;
+  }
+  input[type="radio"][id="blue"]:checked ~ .row .sextants, input[type="radio"][id="blue"]:checked ~ .row .green {
+    visibility: hidden;
+  }
+  input[type="radio"][id="red"]:checked + label {
+    background: #d21313;
+  }
+  input[type="radio"][id="red"]:checked ~ .row .tel, input[type="radio"][id="red"]:checked ~ .row .green {
+    visibility: hidden;
+  }
+  input[type="radio"][id="green"]:checked + label {
+    background: #d21313;
+  }
+  input[type="radio"][id="green"]:checked ~ .row .not-cheap {
+    visibility: hidden;
+  }
+
 /* FOOTER */
 
 footer {
@@ -124,9 +244,4 @@ footer a {
 footer a:hover {
     color: #25339c;
     text-decoration: none;
-}
-
-footer .astroTech-logo-footer {
-    height: 100px;
-    padding-left: 30px;
 }

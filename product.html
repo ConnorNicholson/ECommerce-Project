@@ -7,15 +7,15 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="lib/css/styles.css">            
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="lib/css/styles.css">          
+
+
 
     <title>Products</title>
   </head>
@@ -42,43 +42,248 @@
 
     <!-- HEADER -->
 
-
+      <header class="product-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="product-intro">Look to the stars</h1>
+              <div class="product-info">
+                <p>"Look up at the stars and not down at your feet. Try to make sense of what you see, and wonder about what makes the universe exist. Be curious." - <span class="quote-author">Stephen Hawking</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
 
     <!-- END HEADER -->
 
-        <!-- FOOTER -->
+    <!-- PRODUCTS -->
 
-        <footer>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-8 col-sm-4">
-                  <h3>Follow Us!</h3>
-                  <ul class="list-inline">
-                      <li class="list-inline-item"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-                      <li class="list-inline-item"><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
-                      <li class="list-inline-item"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-                      <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></a></li>
-                      <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a></li>
-                      <li class="list-inline-item"><a href="#"><i class="fa fa-rss fa-2x" aria-hidden="true"></i></a></li>
-                    </ul>
-                      <div>
-                        <p>Logo made using <a href="https://logomakr.com/" target="_blank" class="logomakr_link">LogoMakr</a></p>
-                        <p>&copy; 2019 Designed by AstroTech</p>
-                      </div>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                  <h3>Keep in Touch:</h3>
-                  <ul class="list-unstyled">
-                    <li><p><strong><i class="fa fa-map-marker"></i> Address:</strong> Location, Street, Code</p></li>
-                    <li><p><strong><i class="fa fa-envelope" aria-hidden="true"></i> Email:</strong> <a href="#">info@randomemail.com</a></p></li>
-                    <li><p><strong><i class="fa fa-phone" aria-hidden="true"></i> Phone:</strong> +01 999 999 9999</p></li>
-                  </ul>
-                </div>
-              </div>
+    <main class="product-main">
+        <div class="container product-content">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="product-intro">Products</h2>
             </div>
-          </footer>
+
+            <!-- PRODUCT FILTER -->
+              <input type="radio" id="blue" name="color" />
+              <label for="blue">Telescopes</label>
+              <input type="radio" id="red" name="color"/>
+              <label for="red">Sextants</label>
+              <input type="radio" id="green" name="color"/>
+              <label for="green">Below $1000</label>
+              <input type="radio" id="reset" name="color"/>
+              <label for="reset">RESET</label>
+            <!-- END PRODUCT FILTER -->
+
+            <div class="row">
+
+              <div class="col-md-3 col-sm-6 tel not-cheap">
+                  <div class="card">
+                      <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564195740/Assets%20ECommerce/Meade-12-Inch-ACF_wrhnhv.jpg" alt="Meade ACF High Tech Telescope">
+                      </div>
+                      <hr class="product-divider">
+                      <div class="card-body">
+                        <p class="card-text">MEADE 12" ACF LX90</p>
+                        <p class="card-description">High-Tech Electronic Telescope</p>
+                        <p class="card-price">Price: <span class="price">$2899.00</span></p>
+                      </div>
+                  </div>
+              </div> 
+  
+              <div class="col-md-3 col-sm-6 tel cheap">
+                  <div class="card">
+                      <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564195572/Assets%20ECommerce/Orion_27191_StarBlast_rk4gd8.jpg" alt="Orion StarBlast Telescope">
+                      </div>
+                      <hr class="product-divider">
+                      <div class="card-body">
+                        <p class="card-text">ORION STARBLAST 6i</p>
+                        <p class="card-description">Intelliscope Reflector Telescope</p>
+                        <p class="card-price">Price: <span class="price">$479.99</span></p>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col-md-3 col-sm-6 tel cheap">
+                  <div class="card">
+                      <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564194479/Assets%20ECommerce/Orion_closeup_atchf8.jpg" alt="Orion SpaceProbe Tripod Telescope">
+                      </div>
+                      <hr class="product-divider">
+                      <div class="card-body">
+                        <p class="card-text">ORION SPACEPROBE</p>
+                        <p class="card-description">Equatorial Reflector Telescope</p>
+                        <p class="card-price">Price: <span class="price">$309.99</span></p>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col-md-3 col-sm-6 tel cheap">
+                  <div class="card">
+                      <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564195377/Assets%20ECommerce/Antique_copper_griffith_astro_telescope_wiigd3.jpg" alt="Antique Copper Griffith Telescope">
+                      </div>
+                      <hr class="product-divider">
+                      <div class="card-body">
+                        <p class="card-text">GRIFFITH TELESCOPE</p>
+                        <p class="card-description">Antique Copper 45" Telescope</p>
+                        <p class="card-price">Price: <span class="price">$279.99</span></p>
+                      </div>
+                  </div>
+              </div>
+  
+            </div> <!-- END OF ROW -->
+  
+            <div class="row">
+  
+                <div class="col-md-3 col-sm-6 sextants cheap">
+                    <div class="card">
+                        <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564195050/Assets%20ECommerce/brass_nautical_sextant_dkesfr.jpg" alt="Antique Brass Nautical Sextant">
+                        </div>
+                        <hr class="product-divider">
+                        <div class="card-body">
+                          <p class="card-text">NAUTICAL SEXTANT</p>
+                          <p class="card-description">Antique Brass Nautical Sextant</p>
+                          <p class="card-price">Price: <span class="price">$54.00</span></p>
+                        </div>
+                    </div>
+                </div>
+  
+                <div class="col-md-3 col-sm-6 tel not-cheap">
+                    <div class="card">
+                        <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564266150/Assets%20ECommerce/Orion_Ritchey_Chretien_Astrograph.png" alt="Orion Truss Tube Astrograph">
+                        </div>
+                        <hr class="product-divider">
+                        <div class="card-body">
+                          <p class="card-text">ORION ASTROGRAPH</p>
+                          <p class="card-description">10" Truss Tube Astrograph</p>
+                          <p class="card-price">Price: <span class="price">$2999.99</span></p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-3 col-sm-6 tel not-cheap">
+                    <div class="card">
+                        <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564266557/Assets%20ECommerce/Coronado_Solarmax_3_sssrdv.jpg" alt="Coronado Solarmax 3 Solar Telescope">
+                        </div>
+                        <hr class="product-divider">
+                        <div class="card-body">
+                          <p class="card-text">SOLARMAX III 90</p>
+                          <p class="card-description">Coronado Solar Telescope</p>
+                          <p class="card-price">Price: <span class="price">$4299.00</span></p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-3 col-sm-6 tel cheap">
+                    <div class="card">
+                        <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564267117/Assets%20ECommerce/celestron_powerseeker_gtsc9x.jpg" alt="Celestron PowerSeeker Telescope">
+                        </div>
+                        <hr class="product-divider">
+                        <div class="card-body">
+                          <p class="card-text">POWERSEEKER 12EQ</p>
+                          <p class="card-description">Newtonian Reflector Telescope</p>
+                          <p class="card-price">Price: <span class="price">$148.00</span></p>
+                        </div>
+                    </div>
+                </div>
+              </div> <!-- END OF ROW -->
+
+          <div class="row">
+
+              <div class="col-md-3 col-sm-6 tel cheap">
+                  <div class="card">
+                      <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564267813/Assets%20ECommerce/AWB_OneSky_130_tg4wav.jpg" alt="Astronomers Without Borders One Sky Telescope">
+                      </div>
+                      <hr class="product-divider">
+                      <div class="card-body">
+                        <p class="card-text">AWB ONESKY 130</p>
+                        <p class="card-description">Reflector/Turn Table Telescope</p>
+                        <p class="card-price">Price: <span class="price">199.99</span></p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-3 col-sm-6 tel not-cheap">
+                  <div class="card">
+                      <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564268859/Assets%20ECommerce/celestron_equatorial_telescope_qyjhuj.jpg" alt="Celestron Equatorial 1400 EdgeHD Telescope">
+                      </div>
+                      <hr class="product-divider">
+                      <div class="card-body">
+                        <p class="card-text">CGX-L EQUATORIAL</p>
+                        <p class="card-description">Celestron 1400 EdgeHD Telescope</p>
+                        <p class="card-price">Price: <span class="price">$8699.00</span></p>
+                      </div>
+                  </div>
+              </div>
+    
+              <div class="col-md-3 col-sm-6 tel cheap">
+                  <div class="card">
+                      <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564269293/Assets%20ECommerce/celestron_ambassador_wvcjmt.png" alt="Celestron Ambassador Brass Telescope">
+                      </div>
+                      <hr class="product-divider">
+                      <div class="card-body">
+                        <p class="card-text">AMBASSADOR 80AZ</p>
+                        <p class="card-description">Brass Telescope with Wooden Tripod</p>
+                        <p class="card-price">Price: <span class="price">$899.99</span></p>
+                      </div>
+                  </div>
+              </div>
+    
+              <div class="col-md-3 col-sm-6 sextants not-cheap">
+                  <div class="card">
+                      <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564269539/Assets%20ECommerce/19th_century_marine_sextant_fduydc.jpg" alt="19th Century Marine Sextant">
+                      </div>
+                      <hr class="product-divider">
+                      <div class="card-body">
+                        <p class="card-text">1875 SEXTANT</p>
+                        <p class="card-description">19th Century Marine Sextant c. 1875</p>
+                        <p class="card-price">Price: <span class="price">$1800.00</span></p>
+                      </div>
+                  </div>
+              </div>
+
+          </div> <!-- END OF ROW-->
+
+
+        </div>
+      </div>
+    </main>
+
+    <!-- END END PRODUCTS -->
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-4">
+              <h3>Follow Us!</h3>
+              <ul class="list-inline">
+                  <li class="list-inline-item"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                  <li class="list-inline-item"><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                  <li class="list-inline-item"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                  <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></a></li>
+                  <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a></li>
+                  <li class="list-inline-item"><a href="#"><i class="fa fa-rss fa-2x" aria-hidden="true"></i></a></li>
+                </ul>
+                  <div>
+                    <p>Logo made using <a href="https://logomakr.com/" target="_blank" class="logomakr_link">LogoMakr</a></p>
+                    <p>&copy; 2019 Designed by AstroTech</p>
+                  </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <h3>Keep in Touch:</h3>
+              <ul class="list-unstyled">
+                <li><p><strong><i class="fa fa-map-marker"></i> Address:</strong> Location, Street, Code</p></li>
+                <li><p><strong><i class="fa fa-envelope" aria-hidden="true"></i> Email:</strong> <a href="#">info@randomemail.com</a></p></li>
+                <li><p><strong><i class="fa fa-phone" aria-hidden="true"></i> Phone:</strong> +01 999 999 9999</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
       
-          <!-- END FOOTER -->
+      <!-- END FOOTER -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery -->
