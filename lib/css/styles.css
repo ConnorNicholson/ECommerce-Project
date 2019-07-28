@@ -12,9 +12,22 @@ html,body {
 
 @media (max-width: 800px) {
     .index-header {
-        padding-top: 200px;
+        padding-top: 500px;
+    }
+
+    .header-info {
+        visibility: collapse;
     }
 }
+
+@media (min-width: 801px) and (max-width: 991px) {
+    .index-text {
+        font-size: 25px;
+    }
+}
+
+
+
 
 /* NAVBAR */
 
@@ -166,15 +179,18 @@ html,body {
     background: url(https://res.cloudinary.com/connorn/image/upload/v1564255852/Assets%20ECommerce/test_background_2_f8nktj.jpg) center center no-repeat;
     background-size: cover;
     color: black;
-    align-items: center;
     border-bottom: 1px solid #d21313;
-    height: 220vh;
     width: 100vw;
     padding-top: 30px;
 }
 
 .product-content {
     padding: 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
 }
 
 .product-intro {
@@ -185,11 +201,12 @@ html,body {
 .product-img {
     height: 200px;
     width: 200px;
+    position: relative;
 }
 
 .card-img-top {
     height: 200px;
-    widows: 200px;
+    width: 200px;
 }
 
 .product-divider {
@@ -200,6 +217,11 @@ html,body {
     margin: 10px;
     border: 1px solid #d21313;
     border-radius: 10px;
+    width: 200px;
+}
+
+.card-body {
+    position: relative;
 }
 
 .card-text {
@@ -221,7 +243,7 @@ html,body {
 input[type="radio"] {
     display:none;
 }
-label {
+.filter-label {
     width:23%;
     float:left;
     text-align:center;
@@ -234,19 +256,19 @@ label {
     border: 1px solid #d21313;
     border-radius: 10px
 }
-input[type="radio"][id="blue"]:checked + label {
+input[type="radio"][id="blue"]:checked + .filter-label {
     background: #d21313;
 }
 input[type="radio"][id="blue"]:checked ~ .row .sextants, input[type="radio"][id="blue"]:checked ~ .row .green {
     visibility: hidden;
 }
-input[type="radio"][id="red"]:checked + label {
+input[type="radio"][id="red"]:checked + .filter-label {
     background: #d21313;
 }
 input[type="radio"][id="red"]:checked ~ .row .tel, input[type="radio"][id="red"]:checked ~ .row .green {
     visibility: hidden;
 }
-input[type="radio"][id="green"]:checked + label {
+input[type="radio"][id="green"]:checked + .filter-label {
     background: #d21313;
 }
 input[type="radio"][id="green"]:checked ~ .row .not-cheap {
@@ -272,7 +294,7 @@ input[type="radio"][id="green"]:checked ~ .row .not-cheap {
 .contact-intro {
     text-align: center;
     font-size: 70px;
-    padding-bottom: 30px;
+    padding: 30px;
 }
 
 
@@ -290,12 +312,31 @@ input[type="radio"][id="green"]:checked ~ .row .not-cheap {
     color: #fff;
 }
 
+label {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #d21313;
+    border-radius: 10px;
+    outline: none;
+    background: #d21313;
+    color: #fff;
+}
+
 .form-elements::placeholder {
     color: #fff;
 }
 
-.contact-submit:hover{
+.contact-submit:hover {
     background-color: #d21313;
+}
+
+.contact-submit:active {
+    outline: none;
+}
+
+.contact-submit:not(:active) {
+    outline: none;
 }
 
 

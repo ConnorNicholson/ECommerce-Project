@@ -15,8 +15,6 @@
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <link rel="stylesheet" href="lib/css/styles.css">          
 
-
-
     <title>Products</title>
   </head>
   <body>
@@ -25,9 +23,9 @@
 
     <nav class="navbar navbar-expand-lg fixed-top">
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation-bar"><span class="navbar-toggler-icon">&#9776</span></button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation-bar"><span class="navbar-toggler-icon">&#9776;</span></button>
   
-        <a class="navbar-brand" href="#"><img src="https://res.cloudinary.com/connorn/image/upload/v1564068307/Assets%20ECommerce/AstroTech_logo_twziox.png" class="img-fluid" alt="AstroTech logo"></a>
+        <a class="navbar-brand" href="#"><img src="https://res.cloudinary.com/connorn/image/upload/v1564068307/Assets%20ECommerce/AstroTech_logo_twziox.png" class="img-fluid" alt=""></a>
   
         <div class="collapse navbar-collapse" id="navigation-bar">
           <ul class="navbar-nav ml-auto">
@@ -68,18 +66,18 @@
 
             <!-- PRODUCT FILTER -->
               <input type="radio" id="blue" name="color" />
-              <label for="blue">Telescopes</label>
+              <label class="filter-label" for="blue">Telescopes</label>
               <input type="radio" id="red" name="color"/>
-              <label for="red">Sextants</label>
+              <label class="filter-label" for="red">Sextants</label>
               <input type="radio" id="green" name="color"/>
-              <label for="green">Below $1000</label>
+              <label class="filter-label" for="green">Below $1000</label>
               <input type="radio" id="reset" name="color"/>
-              <label for="reset">All</label>
+              <label class="filter-label" for="reset">All</label>
             <!-- END PRODUCT FILTER -->
 
-            <div class="row">
+            <div class="row"> <!-- FIRST ROW OF 4 -->
 
-              <div class="col-md-3 col-sm-6 tel not-cheap">
+              <div class="col-lg-3 col-sm-6 tel not-cheap">
                   <div class="card">
                       <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564195740/Assets%20ECommerce/Meade-12-Inch-ACF_wrhnhv.jpg" alt="Meade ACF High Tech Telescope">
                       </div>
@@ -92,7 +90,7 @@
                   </div>
               </div> 
   
-              <div class="col-md-3 col-sm-6 tel cheap">
+              <div class="col-lg-3 col-sm-6 tel cheap">
                   <div class="card">
                       <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564195572/Assets%20ECommerce/Orion_27191_StarBlast_rk4gd8.jpg" alt="Orion StarBlast Telescope">
                       </div>
@@ -105,7 +103,7 @@
                   </div>
               </div>
   
-              <div class="col-md-3 col-sm-6 tel cheap">
+              <div class="col-lg-3 col-sm-6 tel cheap">
                   <div class="card">
                       <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564194479/Assets%20ECommerce/Orion_closeup_atchf8.jpg" alt="Orion SpaceProbe Tripod Telescope">
                       </div>
@@ -118,7 +116,7 @@
                   </div>
               </div>
   
-              <div class="col-md-3 col-sm-6 tel cheap">
+              <div class="col-lg-3 col-sm-6 tel cheap">
                   <div class="card">
                       <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564195377/Assets%20ECommerce/Antique_copper_griffith_astro_telescope_wiigd3.jpg" alt="Antique Copper Griffith Telescope">
                       </div>
@@ -133,9 +131,9 @@
   
             </div> <!-- END OF ROW -->
   
-            <div class="row">
+            <div class="row"> <!-- SECOND ROW OF 4 -->
   
-                <div class="col-md-3 col-sm-6 sextants cheap">
+                <div class="col-lg-3 col-sm-6 sextants cheap">
                     <div class="card">
                         <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564195050/Assets%20ECommerce/brass_nautical_sextant_dkesfr.jpg" alt="Antique Brass Nautical Sextant">
                         </div>
@@ -148,20 +146,20 @@
                     </div>
                 </div>
   
-                <div class="col-md-3 col-sm-6 tel not-cheap">
+                <div class="col-lg-3 col-sm-6 tel not-cheap">
                     <div class="card">
                         <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564266150/Assets%20ECommerce/Orion_Ritchey_Chretien_Astrograph.png" alt="Orion Truss Tube Astrograph">
                         </div>
                         <hr class="product-divider">
                         <div class="card-body">
                           <p class="card-text">ORION ASTROGRAPH</p>
-                          <p class="card-description">10" Truss Tube Astrograph</p>
+                          <p class="card-description">10" Truss Tube</p>
                           <p class="card-price">Price: <span class="price">$2999.99</span></p>
                         </div>
                     </div>
                 </div>
     
-                <div class="col-md-3 col-sm-6 tel not-cheap">
+                <div class="col-lg-3 col-sm-6 tel not-cheap">
                     <div class="card">
                         <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564266557/Assets%20ECommerce/Coronado_Solarmax_3_sssrdv.jpg" alt="Coronado Solarmax 3 Solar Telescope">
                         </div>
@@ -174,23 +172,23 @@
                     </div>
                 </div>
     
-                <div class="col-md-3 col-sm-6 tel cheap">
+                <div class="col-lg-3 col-sm-6 tel cheap">
                     <div class="card">
                         <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564267117/Assets%20ECommerce/celestron_powerseeker_gtsc9x.jpg" alt="Celestron PowerSeeker Telescope">
                         </div>
                         <hr class="product-divider">
                         <div class="card-body">
                           <p class="card-text">POWERSEEKER 12EQ</p>
-                          <p class="card-description">Newtonian Reflector Telescope</p>
+                          <p class="card-description">Newtonian Reflector</p>
                           <p class="card-price">Price: <span class="price">$148.00</span></p>
                         </div>
                     </div>
                 </div>
               </div> <!-- END OF ROW -->
 
-          <div class="row">
+          <div class="row"> <!-- THIRD ROW OF 4-->
 
-              <div class="col-md-3 col-sm-6 tel cheap">
+              <div class="col-lg-3 col-sm-6 tel cheap">
                   <div class="card">
                       <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564267813/Assets%20ECommerce/AWB_OneSky_130_tg4wav.jpg" alt="Astronomers Without Borders One Sky Telescope">
                       </div>
@@ -203,7 +201,7 @@
                   </div>
               </div>
 
-              <div class="col-md-3 col-sm-6 tel not-cheap">
+              <div class="col-lg-3 col-sm-6 tel not-cheap">
                   <div class="card">
                       <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564268859/Assets%20ECommerce/celestron_equatorial_telescope_qyjhuj.jpg" alt="Celestron Equatorial 1400 EdgeHD Telescope">
                       </div>
@@ -216,7 +214,7 @@
                   </div>
               </div>
     
-              <div class="col-md-3 col-sm-6 tel cheap">
+              <div class="col-lg-3 col-sm-6 tel cheap">
                   <div class="card">
                       <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564269293/Assets%20ECommerce/celestron_ambassador_wvcjmt.png" alt="Celestron Ambassador Brass Telescope">
                       </div>
@@ -229,7 +227,7 @@
                   </div>
               </div>
     
-              <div class="col-md-3 col-sm-6 sextants not-cheap">
+              <div class="col-lg-3 col-sm-6 sextants not-cheap">
                   <div class="card">
                       <div class="product-img"><img class="card-img-top img-fluid" src="https://res.cloudinary.com/connorn/image/upload/v1564269539/Assets%20ECommerce/19th_century_marine_sextant_fduydc.jpg" alt="19th Century Marine Sextant">
                       </div>
@@ -278,6 +276,11 @@
                 <li><p><strong><i class="fa fa-envelope" aria-hidden="true"></i> Email:</strong> <a href="#">info@randomemail.com</a></p></li>
                 <li><p><strong><i class="fa fa-phone" aria-hidden="true"></i> Phone:</strong> +01 999 999 9999</p></li>
               </ul>
+              <div>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                  <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
